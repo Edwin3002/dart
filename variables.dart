@@ -32,8 +32,8 @@ void main() {
   print("iterable $numbersIter");
   print("iterable ${numbersIter.toList()}");
   print("iterable ${numbersIter.toSet()}");
-print(numbers.map((e) => e));
-print(numbersIter.map((e) => e));
+  print(numbers.map((e) => e));
+  print(numbersIter.map((e) => e));
 
   dynamic action = "adios"; //es un any
   action = " dormir";
@@ -42,9 +42,9 @@ print(numbersIter.map((e) => e));
   name = "pepe";
 
   print(
-      "Hola $name, tienes $age años y estas ${isAlive ? " vivo" : "muerto"} ${abilities.map((e) => e)} $action");
+      "Hola $name, tienes $age años y estas ${isAlive ==  "Vivo"} ${abilities.map((e) => e)} $action");
 
   print("Hola ${name.toUpperCase()}");
-
+print(isAlive);
   print(abilities);
 }
